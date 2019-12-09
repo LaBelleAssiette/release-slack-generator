@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const inquirer = require('inquirer');
+const pluralize = require('pluralize');
 const { WebClient } = require('@slack/web-api');
 
 inquirer.registerPrompt('recursive', require('inquirer-recursive'));
@@ -70,7 +71,7 @@ const getSlackMessageObj = (answers) => {
   const wikiLink =
     '<' +
     `https://en.wikipedia.org/wiki/${answers.animalName}` +
-    `|${capitalizedAnimal} on Wikipedia` +
+    `|${pluralize(capitalizedAnimal, 2)} on Wikipedia` +
     '>';
 
   if (answers.notifyChannel) {

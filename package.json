@@ -8,7 +8,8 @@
     "dotenv": "^8.2.0",
     "eslint": "^6.7.2",
     "inquirer": "^7.0.0",
-    "inquirer-recursive": "^0.0.6"
+    "inquirer-recursive": "^0.0.6",
+    "pluralize": "^8.0.0"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.0.0",
