@@ -75,7 +75,7 @@ const getSlackMessageObj = (answers) => {
     '>';
 
   if (answers.notifyChannel) {
-    footer += 'CC <!@channel>. ';
+    footer += 'CC <!channel>. ';
     accessory = {
       type: 'image',
       image_url: answers.imgLink,
