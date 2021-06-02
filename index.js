@@ -87,6 +87,7 @@ const getSlackMessageObj = (answers) => {
 
   return {
     channel: process.env.SLACK_CHANNEL_ID,
+    unfurl_links: false,
     as_user: true,
     blocks: [
       {
